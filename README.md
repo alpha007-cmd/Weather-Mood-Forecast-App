@@ -43,5 +43,7 @@ A modern weather application that not only shows **real-time weather updates** b
 const weatherApiKey = "YOUR_OPENWEATHER_API_KEY";
 const spotifyApiKey = "YOUR_SPOTIFY_API_KEY";
 ```
+Stock Weather app : https://github.com/alpha007-cmd/Weather-app
+
 
 
