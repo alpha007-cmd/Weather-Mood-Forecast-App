@@ -20,7 +20,7 @@ A modern weather application that not only shows **real-time weather updates** b
 ## ⚙️ Installation & Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/alpha007-cmd/WeatherApp_Mood.git
+   git clone https://github.com/alpha007-cmd/Weather-Mood-Forecast-App
 
 
 2. Navigate into the project:
@@ -43,4 +43,5 @@ A modern weather application that not only shows **real-time weather updates** b
 const weatherApiKey = "YOUR_OPENWEATHER_API_KEY";
 const spotifyApiKey = "YOUR_SPOTIFY_API_KEY";
 ```
+
 
