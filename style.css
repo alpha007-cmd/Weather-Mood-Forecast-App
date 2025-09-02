@@ -9,11 +9,15 @@ body {
   background-color: #222;
 }
 
-/* 🌤️ Main Card */
+/* Main Card */
 .card-container {
   width: 90%;
   max-width: 470px;
- background:  linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(312, 66%, 76%, 1) 0%,
+    hsla(234, 93%, 67%, 1) 100%
+  );
   color: white;
   margin: 90px auto 0;
   border-radius: 20px;
@@ -21,12 +25,13 @@ body {
   text-align: center;
 }
 
-/* 🔍 Search Section */
+/*Search Section */
 .search {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .search input {
@@ -38,7 +43,6 @@ body {
   height: 60px;
   border-radius: 30px;
   flex: 1;
-  margin-right: 16px;
   font-size: 18px;
 }
 
@@ -51,13 +55,14 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .search button img {
   width: 16px;
 }
 
-/* 🌦️ Weather Info */
+/* Weather Info */
 .weather-icon {
   width: 180px;
   margin-top: 30px;
@@ -80,12 +85,14 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   margin-top: 50px;
+  gap: 20px;
 }
 
 .col {
   display: flex;
   align-items: center;
   text-align: left;
+  flex: 1;
 }
 
 .col img {
@@ -103,7 +110,7 @@ body {
   display: none;
 }
 
-/* 🎶 Mood Section */
+/* Mood Section */
 .mood {
   margin-top: 30px;
   background: rgba(255, 255, 255, 0.15);
@@ -123,7 +130,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* 🎵 Spotify Button */
+/* Spotify Button */
 .spotify-link {
   display: inline-block;
   background: #1db954;
@@ -137,4 +144,73 @@ body {
 
 .spotify-link:hover {
   background: #14833b;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  .weather h1 {
+    font-size: 60px;
+  }
+
+  .weather h2 {
+    font-size: 32px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .col {
+    justify-content: center;
+  }
+
+  .col img {
+    width: 40px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search input {
+    font-size: 16px;
+    padding: 10px 15px;
+    height: 50px;
+  }
+
+  .search button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .weather h1 {
+    font-size: 50px;
+  }
+
+  .weather h2 {
+    font-size: 28px;
+  }
+
+  .weather-icon {
+    width: 140px;
+  }
+
+  .mood-title {
+    font-size: 18px;
+  }
+
+  .mood-text {
+    font-size: 14px;
+  }
 }
