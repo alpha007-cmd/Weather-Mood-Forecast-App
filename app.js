@@ -16,7 +16,6 @@ const moodKeywords = {
   Drizzle: { text: "Drizzle beats 🌧️", keyword: "chill beats", activity: "Journal or doodle ✍️" }
 };
 
-// Get Spotify token (Client Credentials flow)
 async function getSpotifyToken() {
   const clientId = "405f514217474a0a82820d817d86b3f2";
   const clientSecret = "9625360e43b3458ea81c829dc76ce8f5";
@@ -34,7 +33,6 @@ async function getSpotifyToken() {
   return data.access_token;
 }
 
-// Fetch a random track from Spotify
 async function getRandomTrack(keyword, token) {
   const response = await fetch(
     `https://api.spotify.com/v1/search?q=${encodeURIComponent(keyword)}&type=track&limit=20`,
@@ -61,7 +59,6 @@ async function checkWeather(city) {
     return;
   }
 
-  // 🌤️ Update weather UI
   document.querySelector(".city").innerHTML = data.name;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";

@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather App</title>
+  <title>Weather App Modified</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="card-container">
+
+    <!--  Search Section -->
     <div class="search">
-      <input type="text" placeholder="City Name" spellcheck="false" />
+      <input type="text" placeholder="City name" spellcheck="false" />
       <button>
         <img src="images/search.png" alt="Search" />
       </button>
     </div>
 
+    <!--  Weather Section -->
     <div class="weather">
       <img src="" class="weather-icon" />
       <h1 class="temp">22°c</h1>
       <h2 class="city">New York</h2>
+
       <div class="details">
         <div class="col">
           <img src="images/humidity.png" alt="Humidity" />
@@ -36,15 +40,16 @@
         </div>
       </div>
 
-      <!-- 🌦️ Mood Forecast Section -->
+      <!--  Mood Forecast Section -->
       <div class="mood">
-        <h3 class="mood-title">Mood🎶</h3>
+        <h3 class="mood-title">Mood Forecast 🎶</h3>
         <p class="mood-text">Your mood suggestion will appear here.</p>
         <div id="spotify-player"></div>
       </div>
     </div>
   </div>
 
+  <!--  Scripts -->
   <script src="https://sdk.scdn.co/spotify-player.js"></script>
   <script src="app.js"></script>
 </body>
